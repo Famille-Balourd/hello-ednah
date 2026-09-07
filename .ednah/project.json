@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ednah-group.com/schemas/project.json",
+  "ednahTemplateVersion": "1.0.0",
+  "name": "Hello Ednah",
+  "slug": "hello-ednah",
+  "subdomain": "hello-ednah",
+  "devUrl": "https://hello-ednah.dev.ednah-group.com",
+  "productionDomain": null,
+  "stack": { "frontend": "react-vite-ts", "backend": "fastify-ts", "packageManager": "pnpm" },
+  "github": { "repo": null, "createdBy": "ednah-desktop" },
+  "coolify": { "applicationUuid": null, "serverUuid": null, "projectUuid": null },
+  "createdAt": "2026-09-07T17:03:05.813Z"
+}

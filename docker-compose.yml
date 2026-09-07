@@ -1,0 +1,16 @@
+# Dev local du projet Ednah. En production, Coolify utilise le Dockerfile + une DB Postgres managée.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-app}
+      POSTGRES_DB: ${POSTGRES_DB:-app}
+    ports:
+      - "5432:5432"        # exposé UNIQUEMENT en dev local ; jamais en prod (voir docs/SECURITY.md)
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

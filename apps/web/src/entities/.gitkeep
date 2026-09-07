@@ -1,0 +1,10 @@
+# Couche `entities/` — modèles métier RÉELS réutilisés par >= 2 features.
+#
+# Un entity = un MODÈLE (User, Customer, Product...), pas un domaine (crypto, sales).
+# Structure d'un entity : <entity>/{model.ts, api.ts, ui/, index.ts}.
+#
+# ⚠️ Un service API de domaine (ensemble d'appels sans modèle) N'EST PAS un entity :
+#    il vit dans shared/api/ (ou features/<domaine>).
+#
+# Vide au départ (on ne crée pas de dossiers vides) : ce fichier ne sert qu'à
+# conserver le dossier dans git. À supprimer dès qu'un premier entity est créé.

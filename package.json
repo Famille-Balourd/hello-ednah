@@ -1,0 +1,14 @@
+{
+  "name": "hello-ednah-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "dev:web": "pnpm --filter @hello-ednah/web dev",
+    "dev:api": "pnpm --filter @hello-ednah/api dev",
+    "build": "pnpm --filter @hello-ednah/web build && pnpm --filter @hello-ednah/api build",
+    "start": "pnpm --filter @hello-ednah/api start",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
